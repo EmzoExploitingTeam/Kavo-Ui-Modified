@@ -145,6 +145,7 @@ function Kavo:ToggleUI()
     else
         game.CoreGui[LibName].Enabled = true
     end
+    print("Check!")
 end
 
 function Kavo.CreateLib(kavName, themeList)
