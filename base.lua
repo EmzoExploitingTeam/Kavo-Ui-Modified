@@ -147,10 +147,6 @@ function Kavo:ToggleUI()
     end
 end
 
-function Kavo:CheckUI()
-	print(LibName)
-end
-
 function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
