@@ -148,8 +148,10 @@ function Kavo:ToggleUI()
 end
 
 function Kavo:DestroyUI()
-	wait(1)
-        ScreenGui:Destroy()
+    if game.CoreGui[LibName] then
+	game.CoreGui[LibName]:Destroy()
+    else
+	print("UI don't exist")
 end
 
 function Kavo.CreateLib(kavName, themeList)
