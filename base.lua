@@ -1,4 +1,5 @@
 local Kavo = {}
+local Modify = {}
 
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
@@ -291,7 +292,7 @@ function Kavo.CreateLib(kavName, themeList)
         ScreenGui:Destroy()
     end)
 	
-    function Kavo:DestroyUI()
+    function Modify:DestroyUI()
 	ScreenGui:Destroy()
 	print("Destroyed UI")
     end
@@ -2647,4 +2648,5 @@ function Kavo.CreateLib(kavName, themeList)
     end  
     return Tabs
 end
+return Modify
 return Kavo
