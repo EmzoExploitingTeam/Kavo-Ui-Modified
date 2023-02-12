@@ -148,7 +148,7 @@ function Kavo:ToggleUI()
 end
 
 function Kavo:DestroyUI()
-	if game.CoreGui:FindFirstChild("LibName") then
+	if game.CoreGui:FindFirstChild(LibName) then
 		game.CoreGui[LibName]:Destroy()
 	else
 		print("Strange Error Occured")
