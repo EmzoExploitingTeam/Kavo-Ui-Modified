@@ -145,7 +145,14 @@ function Kavo:ToggleUI()
     else
         game.CoreGui[LibName].Enabled = true
     end
-    print("Check!")
+end
+
+function Kavo:DestroyUI()
+	if game.CoreGui:FindFirstChild("LibName") then
+		game.CoreGui[LibName]:Destroy()
+	else
+		print("Strange Error Occured")
+	end
 end
 
 function Kavo.CreateLib(kavName, themeList)
