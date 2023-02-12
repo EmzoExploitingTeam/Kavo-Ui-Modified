@@ -1,5 +1,4 @@
 local Kavo = {}
-local Modify = {}
 
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
@@ -148,6 +147,10 @@ function Kavo:ToggleUI()
     end
 end
 
+function Kavo:CheckUI()
+	print(LibName)
+end
+
 function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
@@ -292,11 +295,6 @@ function Kavo.CreateLib(kavName, themeList)
         ScreenGui:Destroy()
     end)
 	
-    function Modify:DestroyUI()
-	ScreenGui:Destroy()
-	print("Destroyed UI")
-    end
-
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
     MainSide.BackgroundColor3 = themeList.Header
