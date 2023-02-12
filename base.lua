@@ -147,6 +147,11 @@ function Kavo:ToggleUI()
     end
 end
 
+function Kavo:DestroyUI()
+	wait(1)
+        ScreenGui:Destroy()
+end
+
 function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
