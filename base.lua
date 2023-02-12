@@ -2650,5 +2650,4 @@ function Kavo.CreateLib(kavName, themeList)
     end  
     return Tabs
 end
-return Modify
 return Kavo
